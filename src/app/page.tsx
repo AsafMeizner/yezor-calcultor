@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-// import Image from "next/image";
+import Image from "next/image";
 
 export default function FeedsAndSpeedsCalculator() {
   const [toolDiameter, setToolDiameter] = useState<number | null>(null);
@@ -82,6 +82,13 @@ export default function FeedsAndSpeedsCalculator() {
             <p className="text-sm text-gray-600 mt-2">
               Note: Use the cutting feedrate for general operations. For plunging, use the plunge feedrate.
             </p>
+            <Image
+              src="/avisar-hatich.JPG"
+              alt="Feeds and Speeds Chart"
+              width={500}
+              height={500}
+              className="rounded-md mt-4"
+            ></Image>
           </div>
         )}
       </div>
