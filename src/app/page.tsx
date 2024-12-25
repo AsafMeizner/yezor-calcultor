@@ -25,9 +25,9 @@ export default function FeedsAndSpeedsCalculator() {
 
       <div className="w-full max-w-md bg-white rounded-lg shadow-md p-6">
         <div className="mb-4">
-          <label className="block text-sm font-medium text-gray-700 mb-1">Select Tool Diameter:</label>
+          <label className="block text-sm font-medium text-black dark:text-black mb-1">Select Tool Diameter:</label>
           <select
-            className="w-full h-8 border-gray-300 rounded-md shadow-sm focus:ring-red-700 focus:border-red-700"
+            className="w-full h-8 border-2 border-slate-400 rounded-md shadow-sm bg-slate-50 focus:ring-red-700 focus:border-red-700"
             onChange={(e) => {
               const choice = parseInt(e.target.value, 10);
               if (choice === 6) {
@@ -59,14 +59,14 @@ export default function FeedsAndSpeedsCalculator() {
           <label className="block text-sm font-medium text-gray-700 mb-1">Number of Flutes:</label>
           <input
             type="number"
-            className="w-full h-8 border-gray-300 rounded-md shadow-sm focus:ring-red-700 focus:border-red-700"
+            className="w-full h-8 rounded-md shadow-sm bg-slate-50 border-2 border-slate-400 focus:ring-red-700 focus:border-red-700"
             value={numberOfFlutes}
             onChange={(e) => setNumberOfFlutes(parseInt(e.target.value, 10) || "")}
           />
         </div>
 
         <button
-          className="w-full bg-red-700 text-white rounded-md py-2 hover:bg-red-900"
+          className="w-full bg-red-600 text-white rounded-md py-2 hover:bg-red-800"
           onClick={calculateFeedrates}
         >
           Calculate
@@ -87,7 +87,7 @@ export default function FeedsAndSpeedsCalculator() {
               alt="Feeds and Speeds Chart"
               width={500}
               height={500}
-              className="rounded-md mt-4"
+              className="rounded-md mt-4 hover:scale-x-150 hover:-rotate-12 transotion-transform duration-500"
             ></Image>
           </div>
         )}
