@@ -27,7 +27,7 @@ export default function FeedsAndSpeedsCalculator() {
         <div className="mb-4">
           <label className="block text-sm font-medium text-gray-700 mb-1">Select Tool Diameter:</label>
           <select
-            className="w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+            className="w-full h-8 border-gray-300 rounded-md shadow-sm focus:ring-red-700 focus:border-red-700"
             onChange={(e) => {
               const choice = parseInt(e.target.value, 10);
               if (choice === 6) {
@@ -59,14 +59,14 @@ export default function FeedsAndSpeedsCalculator() {
           <label className="block text-sm font-medium text-gray-700 mb-1">Number of Flutes:</label>
           <input
             type="number"
-            className="w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+            className="w-full h-8 border-gray-300 rounded-md shadow-sm focus:ring-red-700 focus:border-red-700"
             value={numberOfFlutes}
             onChange={(e) => setNumberOfFlutes(parseInt(e.target.value, 10) || "")}
           />
         </div>
 
         <button
-          className="w-full bg-indigo-600 text-white rounded-md py-2 hover:bg-indigo-700"
+          className="w-full bg-red-700 text-white rounded-md py-2 hover:bg-red-900"
           onClick={calculateFeedrates}
         >
           Calculate
