@@ -73,8 +73,8 @@ export default function FeedsAndSpeedsCalculator() {
         </button>
 
         {results && (
-          <div className="mt-6">
-            <h2 className="text-lg font-semibold">Results:</h2>
+          <div className="mt-6 text-gray-700">
+            <h2 className="text-lg font-semibold text-gray-700">Results:</h2>
             <p>Tool Diameter: {toolDiameter}mm</p>
             <p>Spindle Speed: {spindleSpeed} RPM</p>
             <p>Cutting Feedrate: {results.cuttingFeedrate.toFixed(2)} mm/min</p>
