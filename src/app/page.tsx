@@ -59,7 +59,7 @@ export default function FeedsAndSpeedsCalculator() {
           <label className="block text-sm font-medium text-gray-700 mb-1">Number of Flutes:</label>
           <input
             type="number"
-            className="w-full h-8 rounded-md shadow-sm bg-slate-50 border-2 border-slate-400 focus:ring-red-700 focus:border-red-700"
+            className="w-full h-8 rounded-md shadow-sm text-gray-700 bg-slate-50 border-2 border-slate-400 focus:ring-red-700 focus:border-red-700"
             value={numberOfFlutes}
             onChange={(e) => setNumberOfFlutes(parseInt(e.target.value, 10) || "")}
           />
