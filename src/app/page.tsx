@@ -27,7 +27,7 @@ export default function FeedsAndSpeedsCalculator() {
         <div className="mb-4">
           <label className="block text-sm font-medium text-gray-700 mb-1">Select Tool Diameter:</label>
           <select
-            className="w-full h-8 border-2 border-slate-400 rounded-md shadow-sm bg-slate-50 focus:ring-red-700 focus:border-red-700"
+            className="w-full h-8 border-2 text-gray-700 border-slate-400 rounded-md shadow-sm bg-slate-50 focus:ring-red-700 focus:border-red-700"
             onChange={(e) => {
               const choice = parseInt(e.target.value, 10);
               if (choice === 6) {
