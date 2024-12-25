@@ -40,9 +40,9 @@ export default function FeedsAndSpeedsCalculator() {
   };
 
   return (
-    <div className="flex flex-wrap justify-center items-start gap-6 p-8 min-h-screen bg-gray-100">
+    <div className="flex flex-wrap justify-center items-start p-8 min-h-screen bg-gray-100">
       <h1 className="text-4xl font-bold text-gray-700">Yezor Tools</h1>
-      <div className="flex flex-wrap justify-center items-start gap-6 p-8 min-h-screen bg-gray-100">
+      <div className="flex flex-wrap justify-center items-start gap-6 p-8 bg-gray-100">
         <div className="w-full max-w-md bg-white rounded-lg shadow-md p-6">
           <h1 className="text-2xl font-bold mb-4 text-gray-700">CNC Feeds and Speeds Calculator</h1>
 
