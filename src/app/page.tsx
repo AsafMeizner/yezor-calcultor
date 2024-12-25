@@ -21,11 +21,11 @@ export default function FeedsAndSpeedsCalculator() {
 
   return (
     <div className="flex flex-col items-center p-8 min-h-screen bg-gray-100">
-      <h1 className="text-2xl font-bold mb-4">CNC Feeds and Speeds Calculator</h1>
+      <h1 className="text-2xl font-bold mb-4 text-gray-700">CNC Feeds and Speeds Calculator</h1>
 
       <div className="w-full max-w-md bg-white rounded-lg shadow-md p-6">
         <div className="mb-4">
-          <label className="block text-sm font-medium text-black dark:text-black mb-1">Select Tool Diameter:</label>
+          <label className="block text-sm font-medium text-gray-700 mb-1">Select Tool Diameter:</label>
           <select
             className="w-full h-8 border-2 border-slate-400 rounded-md shadow-sm bg-slate-50 focus:ring-red-700 focus:border-red-700"
             onChange={(e) => {
